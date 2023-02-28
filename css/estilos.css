@@ -1,9 +1,40 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
 .section-all{
     background-image:url(../images/22076005.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 60vw;
+    height: 55vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-asic {
+    background-image: url(../images/asic.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 55vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-gpu {
+    background-image: url(../images/gpu.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 55vw;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -52,17 +83,20 @@
 }
 
 .nav-link {
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 30px;
+    margin-right: 30px;
     color: #fffbfb;
-    font-size: 14px;
+    font-size: 100px;
     font-weight: 600;
 }
 
 .navbar-nav .nav-link {
     color: white !important;
-    font-size: large;
+    font-size: 25px;
     margin-right: 20px;
+    
+    
+    
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -70,16 +104,28 @@
 }
 
 .btn {
+    font-size: 25px;
     background-color: white;
     color: black;
     border-radius: 1pc;
-    margin: 10px 30px 40px;
+    margin: 30px 40px 60px;
 }
 
 .btn-cont button:hover {
     background-color: rgb(93, 9, 93);
     color: white;
 }
+
+.container-start {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+
+
 
 @media (max-width: 991.98px) {
     .navbar-collapse {
@@ -98,6 +144,10 @@
     .nav-link {
       margin: 0px;
       padding-top: 12px
+    }
+
+    .btn-cont {
+
     }
 }
 
@@ -122,9 +172,73 @@
 
 .fab {
     width: calc(1% / 5);
-    animation: fade-in 0.2s 
-     cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+
 }
+
+.container-hero {
+    margin: 4rem auto ;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+  
+}
+
+.img-spec {
+    margin-bottom: 2rem;
+}
+
+.some-text {
+    padding-right: 10rem;
+    display: flex;
+    align-items: center;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    font-weight: bold;
+}
+
+input{
+    padding: 8px;    
+    background-color: transparent;
+    color: black;
+    margin: 10px 0 10px 0 ;
+    
+}
+
+.btn-2{
+    padding: 8px 24px;
+    margin: 2rem;
+    border-radius: 8pc;
+    background-color: transparent;
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.container-about{
+    margin:64px 0;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.us-box{
+    color: black; 
+}
+
+.tabla-asic{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    border-spacing: 20px;     
+}
+
 
 
 @keyframes slidein {
