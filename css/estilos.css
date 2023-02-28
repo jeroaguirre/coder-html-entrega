@@ -108,13 +108,11 @@
 .slider {
     animation: slidein 30s linear infinite;
     white-space: nowrap;
-    animation-direction: reverse;
 }
 
 .logos {
     width: 100%;
     display: inline-block;
-    margin: 0;
 }
 
 .logos img {
