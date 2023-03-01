@@ -103,12 +103,15 @@
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+
+
 .btn {
     font-size: 25px;
     background-color: white;
     color: black;
     border-radius: 1pc;
     margin: 30px 40px 60px;
+
 }
 
 .btn-cont button:hover {
@@ -127,9 +130,9 @@
 
 
 
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
     .navbar-collapse {
-        background-color: rgba(93, 14, 184, 0.772);
+        background-color: rgba(182, 182, 220, 0.772);
         top: 0;
         left: 0;
         right: 0;
@@ -146,13 +149,33 @@
       padding-top: 12px
     }
 
-    .btn-cont {
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 
+    .text-center {
+        font-size: 15px;
+    }
+
+    .us-row .row {
+        flex-direction: column;
     }
 }
 
 .container {
-    overflow: hidden;      
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.form-full {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+   
 }
 
 .slider {
@@ -232,14 +255,49 @@ input{
     color: black; 
 }
 
-.tabla-asic{
+.tabla-asic {
+    margin: 2rem;
     border: 1px solid black;
-    padding: 20px;
+    width: 40rem;
+    height: 20rem;
+    padding: 2rem;
     text-align: center;
     border-spacing: 20px;     
 }
 
+.tabla-asic th, .tabla-asic td {
+    border: 1px solid #ccc;
+}
 
+.tabla-gpu{
+    margin: 2rem;
+    border: 1px solid black;
+    width: 40rem;
+    height: 20rem;
+    padding: 2rem;
+    text-align: center;
+    border-spacing: 20px;     
+}
+
+.tabla-gpu th, .tabla-gpu td {
+    border: 1px solid #ccc;
+}
+
+.image-asic {
+    margin: 2rem;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.image-gpu {
+    margin: 2rem;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+}
 
 @keyframes slidein {
     from {
